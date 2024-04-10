@@ -1,0 +1,15 @@
+public class taeho0815 {
+
+	public static void main(String[] args) {
+
+		//1부터 10까지 출력하는 반복문
+
+		int 숫자 = 1;
+		while(숫자<=10) {//10이랑 숫자랑 크기비교
+		System.out.println(*);	
+		숫자++;	
+		}
+
+
+	}
+}
