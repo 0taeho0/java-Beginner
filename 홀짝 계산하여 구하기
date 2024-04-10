@@ -1,0 +1,14 @@
+public class S21211_00v1 {
+	public static void main(String[] args) {
+		int odd = 0;
+		int even = 0;
+		for(int cnt=1; cnt < 11; cnt++) {
+			if(cnt%2==1) 
+				odd+=cnt;
+			else 
+				even+=cnt;
+			System.out.println("cnt 가"+cnt+"일 때"+" "+"홀의 합:"+odd+" "+"짝수의 합: "+even+" "+"총합"+(odd+even));
+				
+		}
+	}
+}
