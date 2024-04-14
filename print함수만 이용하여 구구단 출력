@@ -1,0 +1,20 @@
+public class Taeho0920 {
+
+	public static void main(String[] args) {
+		//구구단 만들기
+		Scanner sc = new Scanner(System.in);//정수형을 입력 받기
+		
+		System.out.println("몇단이 보고싶니?");
+		int 몇단 = sc.nextInt();
+		//반복문을 안쓰고 구구단을 출력
+		//System.out.println(몇단+"*1= "+(몇단*1));
+		//System.out.println(몇단+"*2= "+(몇단*2));
+		//System.out.println(몇단+"*3= "+(몇단*3));
+		//System.out.println(몇단+"*4= "+(몇단*4));
+		//System.out.println(몇단+"*5= "+(몇단*5));
+		//System.out.println(몇단+"*6= "+(몇단*6));
+		//System.out.println(몇단+"*7= "+(몇단*7));
+		//System.out.println(몇단+"*8= "+(몇단*8));
+		//System.out.println(몇단+"*9= "+(몇단*9));
+  }
+}
