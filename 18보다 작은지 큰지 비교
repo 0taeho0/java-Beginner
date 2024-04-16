@@ -1,0 +1,15 @@
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);//입력을 받는다
+
+		System.out.println("야 숫자하나 입력해봐");
+		int num = sc.nextInt();//입력받은 문자열을 정수로 변환시킨다
+		if (num<18){  // num이 18보다 작으면
+			System.out.println("num이 18보다 작네");
+			} else {
+      System.out.println("num이 18보다 크네")
+   }
+	}
+
+}
