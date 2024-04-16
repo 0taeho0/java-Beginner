@@ -1,0 +1,17 @@
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("몇단볼래");
+		int 몇단 = sc.nextInt();
+		System.out.println("몇까지 볼래?");
+		int 고팔수 = sc.nextInt();
+		
+		int i = 1;
+	while(i<=고팔수) {
+		System.out.println(몇단+"*"+i+"="+(몇단*i));
+		i++;
+		
+		}	
+	}
