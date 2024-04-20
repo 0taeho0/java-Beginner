@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int arr[] = new int[50];
+		int idx = 0;
+	
+		while(true) {
+			System.out.println("1: push 2: pop");
+			int in = sc.nextInt();
+			if(in == 1) {
+				// push
+				int a = sc.nextInt();
+				arr[idx++] = a;
+			} else {
+				// pop
+				System.out.println(arr[--idx]);
+				arr[idx] = 0;
+			}
+		}
+	}
+}
