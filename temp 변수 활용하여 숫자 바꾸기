@@ -1,0 +1,14 @@
+public class main {
+
+	public static void main(String[] args) {
+	int a = 18;
+	int b = 99;
+	System.out.println("a는"+ a +", "+"b는"+b );
+	int tmp = 0;
+		tmp = 18;
+		a= 99;
+		b=18;
+		System.out.println("a는"+a+"입니다");
+		System.out.println("b는"+b+"입니다");
+	}
+}
