@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		//직사각형 넓이
+		System.out.println("가로");
+		int 가로 = sc.nextInt();
+		System.out.println("세로");
+		int 세로 =  sc.nextInt();
+		// 넓이 계산 메소드 호출
+		int 넓이 = 넓이계산(가로 , 세로);
+		// return 된 결과를 출력
+		System.out.println(가로+"*"+세로+":"+넓이);
+	}
+	static int 넓이계산(int num1,int num2){
+		int result = num1*num2;
+		return result;
+	
+	
+	}
+
+}
