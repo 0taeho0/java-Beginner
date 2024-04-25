@@ -1,0 +1,81 @@
+package s21211;
+
+import java.util.Scanner;
+
+public class Main2 {
+
+public static void main(String[] args) {
+
+Scanner scan = new Scanner(System.in);
+
+int sum = 0;
+
+while(true) {
+
+System.out.println("숫자 입력해봐(2진수)");
+
+int num = scan.nextInt();
+
+
+int 숫자자리 = Integer.toString(num).length();
+
+int[] 숫자방 = new int[숫자자리];
+
+boolean result = true;
+
+
+System.out.println(num);
+
+for(int i=숫자방.length-1; i>=0; i--) {
+
+숫자방[i] = num % 10;
+
+num = num / 10;
+
+System.out.println(num);
+
+if(숫자방[i] != 0 && 숫자방[i] != 1) {
+
+result = false;
+
+}
+
+}
+
+System.out.println("배열 검사하기");
+
+for(int i=0; i<숫자방.length; i++) {
+
+System.out.println(숫자방[i]);
+
+}
+
+if(result) {
+
+System.out.println("값이 정상적으로 등록되었습니다");
+
+for(int i=숫자방.length-1;i>=0;i--) {
+
+if(숫자방[i]==1) {
+
+System.out.println(Math.pow(2, i));
+
+sum += Math.pow(2, i);
+
+System.out.println(sum);
+
+}
+
+}
+
+}
+
+}
+
+// System.out.println("값이 정상적으로 등록되었습니다.");
+
+// 3. 진수 변환
+
+}
+
+}
