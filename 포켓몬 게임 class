@@ -1,0 +1,33 @@
+public class 푸린 {
+	//속성
+	static int pno = 0;
+	int level = 1;
+	int hp;	
+	int atk;
+	String name;
+	
+	//기능
+	
+	푸린(){
+		pno++;
+		name = "포켓몬"+pno;
+	}
+	
+	푸린(String name){
+		pno++;
+		this.name = name;
+	}
+	
+	void 레벨업() {
+		level++;
+		hp += 10;
+		atk += 2;
+	}
+	
+	void 공격() {
+		System.out.println(name+"이 공격합니다");
+		
+		
+	}
+	
+}
