@@ -1,0 +1,27 @@
+package project;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		String num="";
+		
+		for(int i = 1; i<=8; i++) {
+			String num2 = sc.next();
+			num += num2;
+		}
+        
+        if(num.equals("12345678")) {
+			System.out.println("ascending");
+		} else if (num.equals("87654321")) {
+			System.out.println("descending");
+		} else {
+			System.out.println("mixed");
+	    }
+		
+	}
+
+}
