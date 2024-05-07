@@ -1,0 +1,15 @@
+package sw0507;
+
+public class MonsterMain {
+	public static void main(String[] args) {
+		Monster m1 = new Monster();
+		Monster m2 = new Monster(50, 30, "최해람");
+		Monster m3 = new Monster("김주현");
+		int num = 18;
+		m1.체력 = 100;
+		m1.공격력 = 15.1f;
+		m1.이름 = "권세준";
+		
+		m3.달리기(100);
+	}
+}
