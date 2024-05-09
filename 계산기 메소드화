@@ -1,0 +1,75 @@
+package s21211_00v1;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int result = 0;
+		
+		System.out.print("몇개의 숫자를 입력할꺼임?");
+		int num1 = scan.nextInt();
+		
+		int[] arr = new int[num1];
+		
+		for(int i=0; i<arr.length; i++) {
+			System.out.printf("배열[%d] : ",i);
+			arr[i] = scan.nextInt();
+		}
+		
+		arr_print(arr);
+			String num3 = "";
+			while(true) {
+				System.out.println("+, -, * 선택하세요");
+				num3 = scan.next();
+				if(num3.equals("*")||num3.equals("+")||num3.equals("-")) {
+					break;
+				}else {
+					System.out.println("다시입력");
+					continue;
+				}
+
+			}
+			result = calculation(num3, arr);
+			System.out.printf("연산(%s) 결과 : %d\n",num3,result);
+			
+		}
+
+	static int calculation(String num3, int[] arr) {
+		int result = 0;
+		switch (num3) {
+		case "+": {
+			for(int i=0; i<arr.length; i++) {
+				result += arr[i];
+			}
+			break;
+		}
+		case "-":{
+			for(int i=0; i<arr.length; i++) {
+				result -= arr[i];
+			}
+			break;
+		}
+		case "*":{
+			result +=1;
+			for(int i=0; i<arr.length; i++) {
+				result *= arr[i];
+			}
+			break;
+		}
+		default:
+			System.out.println("다시 입력하세요");
+			break;
+		}
+		return result;
+	}
+	static void arr_print(int[] arr) {
+		for(int i=0; i<arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+	}
+	
+	
+}
