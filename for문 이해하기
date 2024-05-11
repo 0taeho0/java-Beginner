@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("start :");
+		int start = sc.nextInt();
+		
+		System.out.println("last :");
+		int stop = sc.nextInt();
+		
+		System.out.println("value change?:");
+		int step = sc.nextInt();
+		
+		for(int i=start; i<=stop; i+=step) {
+			System.out.println("*");
+		}
+	}
+
+}
