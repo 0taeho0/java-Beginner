@@ -1,0 +1,11 @@
+public class Mian {
+
+	public static void main(String[] args) {
+		int a = 18;
+				System.out.println(a);
+		int x = 920;
+				System.out.println(x);
+		
+	}
+
+}
