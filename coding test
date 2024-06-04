@@ -1,0 +1,39 @@
+package s212;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class HeroMain {
+
+	public static void main(String[] args) {
+		Hero hero = new Hero("히어로");
+		Hero enemy = new Hero("탈주닌자", 15, 80, 10);
+		Scanner scan = new Scanner(System.in);
+		Random rand = new Random();
+		int count = 0;
+		while(true) {
+			count++;
+			System.out.printf("%d 턴, 현재 적의 체력:%d \n", count, enemy.get체력());
+			
+			System.out.printf("아무키나 누르시오.\n");
+			scan.next();
+			//공격 50, 크리공격 20, 명상 30
+			//0 1 2 3 4   5 6    7 8 9
+			int 랜덤 = rand.nextInt();
+			
+			if(랜덤 < 5) {
+				hero.공격(enemy);
+			}else if(랜덤 < 7) {
+				hero.크리공격(enemy);
+			} else {
+				hero.명상();
+			}
+			
+			if(enemy.get체력() <= 0) {
+				System.out.printf("%d 턴만에 컷!\n", count);
+				break;
+			}
+		}
+	}
+
+}
