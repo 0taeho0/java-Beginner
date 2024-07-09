@@ -1,0 +1,47 @@
+package refeere;
+
+import java.util.Random;
+
+public class main {
+
+	public static void main(String[] args) {
+		Random rand = new Random();
+		
+		String [] 사람 = new String[6];
+		String 로비 = "";
+		String [] 로비인원 = new String[4];
+		String 교무실 = "";
+		String 스텐드 = "";
+		String 바닥 = "";
+		String 화장실 = "";
+		String 분리수거 = "";
+		String 복도 = "";
+		String 무대 = "";
+		int count = 0;
+		String [] arr = {"신동훈","강혜교","탁은지","고연진","안윤희","유재민","허은성","김지환","문정훈","장 준",
+						"김태빈","이지현","임은수","허지우","오예은","이민섭","김지환","김지아","여승민","김태호",
+					   "강성규","김영현","이유정","김수민","박혜민","조한결"};
+		
+		로비 += arr[Math.abs(rand.nextInt() % 26)+1]+ " ";
+		String number = 로비;
+		로비인원[0] = 로비;
+		do {
+			int i=1;
+			로비 += arr[Math.abs(rand.nextInt() % 26)+1]+ " ";
+			if(로비.equals(number)) {
+				continue;
+			} else {
+				로비인원[i] = 로비;
+				i++;
+				count++;
+				if(count == 로비인원.length) {
+					break;
+				}
+			}
+		}while(true);
+		for(int i=0; i<로비인원.length; i++){
+			System.out.print(로비인원[i]+" ");
+		}
+	}
+
+}
