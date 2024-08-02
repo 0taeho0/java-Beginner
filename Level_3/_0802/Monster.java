@@ -1,5 +1,5 @@
 
-package _080;
+package _0802;
 
 public abstract class Monster {
 	
